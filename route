@@ -1,0 +1,4 @@
+Route::controller(DemoController::class)->group(function () {
+    Route::get('/about-us', 'Index')->name('about.page');
+    Route::get('/contact-us', 'ContactMethod')->name('contact.page');
+});
